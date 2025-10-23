@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <center>
+        <h1>Student Registration Form</h1>
+    </center>
+    <hr>
+    <form action="./response.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Full name" required /><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter valid email address" required /><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter password" required /><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" required />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="Other" value="Other" required />
+        <label for="Other">Other</label><br><br>
+        <label for="text">Course:</label>
+        <select name="text" id="text">
+            <option>--Select Course--</option>
+            <optgroup label="Programming language">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="java">Java</option>
+            </optgroup>
+            <optgroup label="fronted Technologies">
+                <option value="HTML">HTML</option>
+                <option value="css">CSS</option>
+                <option value="ruby">Ruby</option>
+            </optgroup>
+        </select><br><br>
+        <label for="tel">Contact No:</label>
+        <input type="tel" name="tel" placeholder="Enter Phone Number" required /><br><br>
+        <label for="add">Address:</label><br>
+        <textarea name="text" id="add" rows="3" coloum="6">Enter your address</textarea><br><br>
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+        <hr>
+        <center>&copy; 2025 Student Registration Portal</center>
+
+    </form>
+</body>
+
+</html>
